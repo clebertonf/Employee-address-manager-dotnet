@@ -45,7 +45,7 @@ public class EmployeeService : IEmployeeService
 
     public async Task<EmployeeDto> DeleteEmployeeAsync(int id)
     {
-        var employeeEntity = await _employeeRepository.GetEmployeeByIdAsync(id);
+        var employeeEntity = await _employeeRepository.DeleteEmployeeAsync(id);
         return _mapper.Map<EmployeeDto>(employeeEntity);
     }
 }

@@ -12,9 +12,6 @@ public class Address : BaseEntity
     public Address(string street, string city, string state)
     {
         ValidateDomian(street, city, state);
-        Street = street;
-        City = city;
-        State = state;
     }
     
     public Address(int id, string street, string city, string state)
@@ -29,5 +26,8 @@ public class Address : BaseEntity
         DomainExceptionValidation.When(string.IsNullOrWhiteSpace(city), $"{nameof(city)} cannot be null or empty.");
         DomainExceptionValidation.When(string.IsNullOrWhiteSpace(state), $"{nameof(state)} cannot be null or empty.");
         
+        Street = street;
+        City = city;
+        State = state;
     }
 }
