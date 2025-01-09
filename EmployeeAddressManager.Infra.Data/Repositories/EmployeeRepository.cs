@@ -38,10 +38,11 @@ public class EmployeeRepository : IEmployeeRepository
         return employee;
     }
 
-    public async Task<Employee> DeleteEmployeeAsync(Employee id)
+    public async Task<Employee> DeleteEmployeeAsync(int id)
     {
-        _context.Employees.Remove(id);
+        var employee = await _context.Employees.FindAsync(id);
+        _context.Employees.Remove(employee);
         await _context.SaveChangesAsync();
-        return id;
+        return employee;
     }
 }

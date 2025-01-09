@@ -38,8 +38,9 @@ public class AddressRepository : IAddressRepository
         return address;
     }
 
-    public async Task<Address> DeleteAddressAsync(Address address)
+    public async Task<Address> DeleteAddressAsync(int id)
     {
+        var address = await _context.Addresses.FindAsync(id);
         _context.Addresses.Remove(address);
         await _context.SaveChangesAsync();
         return address;

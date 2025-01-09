@@ -8,5 +8,5 @@ public interface IAddressRepository
     Task<Address> GetAddressByIdAsync(int id);
     Task<Address> CreateAddressAsync(Address address);
     Task<Address> UpdateAddressAsync(Address address);
-    Task<Address> DeleteAddressAsync(Address address);
+    Task<Address> DeleteAddressAsync(int id);
 }
