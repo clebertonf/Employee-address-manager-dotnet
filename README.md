@@ -29,7 +29,7 @@ Employee-address-manager
 
 ## Technologies
 
-- .NET 7
+- .NET 9
 - Entity Framework Core
 - AutoMapper
 - Swagger UI
