@@ -66,7 +66,7 @@ Employee-address-manager
 
 ### Prerequisites
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0)
+- - [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0))
 - A database (e.g., SQL Server, PostgreSQL, or SQLite)
 
 ### Installation
