@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "Todo API",
+        Title = "Employee address manager",
         Version = "v1",
         Description = "Employee address manager api with clean architecture"
     });
